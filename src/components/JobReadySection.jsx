@@ -1,14 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import { Award, GraduationCap, Briefcase, Code, Users, Rocket } from "lucide-react";
+import {
+  Award,
+  GraduationCap,
+  Briefcase,
+  Code,
+  Users,
+  Rocket,
+} from "lucide-react";
 
 const JobReadySection = () => {
   const courses = [
     { name: "AWS Cloud", url: "https://4achievers.com/aws-training" },
-    { name: "Software Testing", url: "https://4achievers.com/software-testing-training" },
-    { name: "Digital Marketing", url: "https://4achievers.com/digital-marketing-training" },
-    { name: "Oracle Fusion", url: "https://4achievers.com/oracle-fusion-financials-training" },
+    {
+      name: "Software Testing",
+      url: "https://4achievers.com/software-testing-training",
+    },
+    {
+      name: "Digital Marketing",
+      url: "https://4achievers.com/digital-marketing-training",
+    },
+    {
+      name: "Oracle Fusion",
+      url: "https://4achievers.com/oracle-fusion-financials-training",
+    },
   ];
 
   const features = [
@@ -94,7 +110,8 @@ const JobReadySection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mt-4 text-gray-200 text-lg sm:text-l max-w-3xl mx-auto"
         >
-          Master in-demand skills and land your dream job with 4Achievers’ industry-leading training.
+          Master in-demand skills and land your dream job with 4Achievers’
+          industry-leading training.
         </motion.p>
       </div>
 
@@ -144,11 +161,16 @@ const JobReadySection = () => {
           <motion.div
             key={`feature-${idx}`}
             variants={itemVariants}
-            whileHover={{ scale: 1.05, rotate: 2, transition: { duration: 0.3 } }}
+            whileHover={{
+              scale: 1.05,
+              rotate: 2,
+              transition: { duration: 0.3 },
+            }}
             whileTap={{ scale: 0.95 }}
             className="relative bg-white/5 backdrop-blur-md p-8 border border-indigo-500/50 shadow-lg hover:shadow-[0_0_20px_rgba(99,102,241,0.5)] transition-all duration-300 min-w-0 flex-1"
             style={{
-              clipPath: "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%)",
+              clipPath:
+                "polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%)",
               minHeight: "200px",
               display: "flex",
               flexDirection: "column",
@@ -156,11 +178,18 @@ const JobReadySection = () => {
               justifyContent: "center",
             }}
           >
-            <Tilt glareEnable={true} glareMaxOpacity={0.2} tiltMaxAngleX={5} tiltMaxAngleY={5}>
+            <Tilt
+              glareEnable={true}
+              glareMaxOpacity={0.2}
+              tiltMaxAngleX={5}
+              tiltMaxAngleY={5}
+            >
               <div className="absolute inset-0  opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="relative z-10 text-center">
                 <div className="mb-4 flex justify-center">{item.icon}</div>
-                <p className="text-gray-50 text-base font-medium">{item.text}</p>
+                <p className="text-gray-50 text-base font-medium">
+                  {item.text}
+                </p>
               </div>
             </Tilt>
           </motion.div>

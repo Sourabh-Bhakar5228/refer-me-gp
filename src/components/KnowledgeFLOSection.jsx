@@ -6,7 +6,7 @@ function KnowledgeFLOSection() {
       className="bg-contain  bg-repeat "
       style={{
         backgroundImage:
-          "linear-gradient(135deg, rgba(255, 245, 157, 0.6), rgba(255, 255, 255, 0.3)), url('src/assets/bg-img/pen.jpg')",
+          "linear-gradient(135deg, rgba(255, 245, 157, 0.6), rgba(255, 255, 255, 0.3)), url('/assets/bg-img/pen.jpg')",
       }}
     >
       {/* First Section: Image on Left, Text on Right */}
@@ -27,7 +27,7 @@ function KnowledgeFLOSection() {
               {/* Illustration Placeholder */}
               <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
                 <img
-                  src="src/assets/creatives/girl.jpg"
+                  src="/assets/creatives/girl.jpg"
                   alt="KnowledgeFLO Illustration"
                   className="w-full h-full object-cover rounded-lg"
                 />
@@ -93,7 +93,7 @@ function KnowledgeFLOSection() {
               {/* Illustration */}
               <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
                 <img
-                  src="src/assets/creatives/girl.jpg"
+                  src="/assets/creatives/girl.jpg"
                   alt="KnowledgeFLO Illustration"
                   className="w-full h-full object-cover rounded-lg"
                 />
@@ -102,9 +102,6 @@ function KnowledgeFLOSection() {
           </div>
         </div>
       </section>
-
-
-
 
       <section className="bg-transparent py-4 md:py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-0">
@@ -123,7 +120,7 @@ function KnowledgeFLOSection() {
               {/* Illustration Placeholder */}
               <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
                 <img
-                  src="src/assets/creatives/girl.jpg"
+                  src="/assets/creatives/girl.jpg"
                   alt="KnowledgeFLO Illustration"
                   className="w-full h-full object-cover rounded-lg"
                 />

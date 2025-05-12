@@ -1,23 +1,24 @@
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/outline"; // Changed from v2 to v1 import
-import fabBackground from "../assets/bg-img/str.jpg";
+// import fabBackground from "../assets/bg-img/str.jpg";
+import fabBackground from "/assets/bg-img/str.jpg"; // Adjust the path as necessary
 
 const BusinessSection = () => {
   return (
     <div className="bg-white pb-6 px-4 sm:px-6 lg:px-8">
       <div className="max-w-full mx-auto">
-        <div 
+        <div
           className="rounded-xl shadow-lg overflow-hidden"
           style={{
             backgroundImage: `url(${fabBackground})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            position: 'relative',
-            minHeight: '300px' // Added minimum height
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            position: "relative",
+            minHeight: "300px", // Added minimum height
           }}
         >
           <div className="absolute inset-0 bg-black/70"></div>
-          
+
           <div className="relative z-10 p-8 sm:p-12 md:flex md:items-center md:justify-between">
             <div className="md:w-2/3">
               <motion.div
@@ -32,8 +33,9 @@ const BusinessSection = () => {
                   ReferMeGroup for Business
                 </h3>
                 <p className="text-lg text-white/90 mb-6">
-                  Empower your workforce with our comprehensive online training programs, 
-                  industry-recognized certifications, and expert-led webinars.
+                  Empower your workforce with our comprehensive online training
+                  programs, industry-recognized certifications, and expert-led
+                  webinars.
                 </p>
               </motion.div>
             </div>

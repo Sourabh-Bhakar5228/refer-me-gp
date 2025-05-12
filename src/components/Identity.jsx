@@ -6,7 +6,7 @@ import {
   BookOpenIcon,
   PlayIcon,
   UsersIcon,
-  BriefcaseIcon
+  BriefcaseIcon,
 } from "@heroicons/react/outline";
 
 const Identity = () => {
@@ -14,17 +14,17 @@ const Identity = () => {
     <div className="relative overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <video 
-          autoPlay 
-          loop 
-          muted 
+        <video
+          autoPlay
+          loop
+          muted
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="src/assets/bg-img/vedio.mp4" type="video/mp4" />
-          <img 
-            src="/assets/creatives/girl.jpg" 
-            alt="ReferMeGroup background" 
+          <source src="/assets/bg-img/vedio.mp4" type="video/mp4" />
+          <img
+            src="/assets/creatives/girl.jpg"
+            alt="ReferMeGroup background"
             className="w-full h-full object-cover"
           />
         </video>
@@ -55,10 +55,11 @@ const Identity = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             <p className="text-xl md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-              <strong className="text-white font-semibold">ReferMeGroup</strong> bridges 
-              the digital skills gap through immersive learning experiences, 
-              connecting talent with Fortune 500 partners via cutting-edge 
-              certification programs and personalized career coaching.
+              <strong className="text-white font-semibold">ReferMeGroup</strong>{" "}
+              bridges the digital skills gap through immersive learning
+              experiences, connecting talent with Fortune 500 partners via
+              cutting-edge certification programs and personalized career
+              coaching.
             </p>
           </motion.div>
 
@@ -75,7 +76,7 @@ const Identity = () => {
           </motion.div> */}
 
           {/* Stats counter */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -86,10 +87,12 @@ const Identity = () => {
               {[
                 { value: "100+", label: "Certifications" },
                 { value: "10K+", label: "Career Transitions" },
-                { value: "94%", label: "Placement Rate" }
+                { value: "94%", label: "Placement Rate" },
               ].map((item, index) => (
                 <div key={index} className="px-4 text-center">
-                  <div className="text-3xl font-bold text-white">{item.value}</div>
+                  <div className="text-3xl font-bold text-white">
+                    {item.value}
+                  </div>
                   <div className="text-sm font-medium text-white/80 uppercase tracking-wider mt-1">
                     {item.label}
                   </div>

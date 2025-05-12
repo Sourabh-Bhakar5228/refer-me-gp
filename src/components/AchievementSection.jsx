@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
 const AchievementSection = () => {
   const sectionRef = useRef(null);
@@ -7,13 +7,13 @@ const AchievementSection = () => {
     learners: 0,
     trainers: 0,
     countries: 0,
-    hours: 0
+    hours: 0,
   });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setCountersActive(true);
             observer.unobserve(entry.target);
@@ -41,7 +41,7 @@ const AchievementSection = () => {
       learners: 1500,
       trainers: 15,
       countries: 20,
-      hours: 11000
+      hours: 11000,
     };
 
     const duration = 2000; // animation duration in ms
@@ -55,7 +55,7 @@ const AchievementSection = () => {
         learners: Math.floor(progress * targetValues.learners),
         trainers: Math.floor(progress * targetValues.trainers),
         countries: Math.floor(progress * targetValues.countries),
-        hours: Math.floor(progress * targetValues.hours)
+        hours: Math.floor(progress * targetValues.hours),
       });
 
       if (progress < 1) {
@@ -67,14 +67,12 @@ const AchievementSection = () => {
   }, [countersActive]);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="py-3 px-4 sm:px-6 lg:px-8  text-gray-800"
       style={{
         backgroundImage:
-        "linear-gradient(135deg, rgba(100, 125, 150, 0.2), rgba(230, 240, 255, 0.3)), url('src/assets/bg-img/bg.jpg')"
-        ,
-          
+          "linear-gradient(135deg, rgba(100, 125, 150, 0.2), rgba(230, 240, 255, 0.3)), url('/assets/bg-img/bg.jpg')",
       }}
     >
       <div className="max-w-7xl mx-auto">
@@ -120,8 +118,6 @@ const AchievementSection = () => {
             <h3 className="text-xl font-semibold">Teaching Hours</h3>
           </div>
         </div>
-
-       
       </div>
     </section>
   );

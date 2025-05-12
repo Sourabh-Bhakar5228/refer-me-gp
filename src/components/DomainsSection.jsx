@@ -1,13 +1,20 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/autoplay';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
 
 import {
-  FaChartBar, FaCode, FaNetworkWired, FaCheckCircle, FaBriefcase,
-  FaFlask, FaBug, FaMobileAlt, FaDatabase
-} from 'react-icons/fa';
+  FaChartBar,
+  FaCode,
+  FaNetworkWired,
+  FaCheckCircle,
+  FaBriefcase,
+  FaFlask,
+  FaBug,
+  FaMobileAlt,
+  FaDatabase,
+} from "react-icons/fa";
 
 const domains = [
   {
@@ -115,10 +122,10 @@ export default function DomainsSection() {
           Choose From 25+ In-Demand Domains
         </h3>
         <p className="max-w-2xl mx-auto mb-8 text-gray-500">
-          Our immersive courses in booming fields like Data Science, AI, and Cloud
-          Computing provide you with the practical knowledge and experience you
-          need to succeed in the ever-evolving job market. Don&apos;t just learn,
-          get future-ready with upGrad KnowledgeHut.
+          Our immersive courses in booming fields like Data Science, AI, and
+          Cloud Computing provide you with the practical knowledge and
+          experience you need to succeed in the ever-evolving job market.
+          Don&apos;t just learn, get future-ready with upGrad KnowledgeHut.
         </p>
 
         {/* First Swiper */}
@@ -128,7 +135,12 @@ export default function DomainsSection() {
               <div className="bg-white border border-blue-300 shadow-lg rounded-tl-3xl rounded-br-3xl p-5 h-40 flex flex-col justify-between items-start hover:shadow-blue-400 hover:scale-105 transition-all duration-300">
                 <div className="text-3xl text-blue-500">{item.icon}</div>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
-                <a href={item.link} target="_blank" rel="noreferrer" className="text-sm text-blue-500 hover:underline">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-blue-500 hover:underline"
+                >
                   Explore →
                 </a>
               </div>
@@ -143,7 +155,12 @@ export default function DomainsSection() {
               <div className="bg-white border border-blue-300 shadow-lg rounded-tl-3xl rounded-br-3xl p-5 h-40 flex flex-col justify-between items-start hover:shadow-blue-400 hover:scale-105 transition-all duration-300">
                 <div className="text-3xl text-blue-500">{item.icon}</div>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
-                <a href={item.link} target="_blank" rel="noreferrer" className="text-sm text-blue-500 hover:underline">
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm text-blue-500 hover:underline"
+                >
                   Explore →
                 </a>
               </div>

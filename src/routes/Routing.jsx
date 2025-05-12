@@ -10,38 +10,35 @@ import Careers from "../pages/Career/Career";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <AppLayout/>,
+    element: <AppLayout />,
     children: [
       {
         index: true,
-        path:'',
-        element: <Home/>,
+        path: "/",
+        element: <Home />,
       },
       {
-        path: 'about',
-        element: <About/>
+        path: "/about",
+        element: <About />,
       },
       {
-        path: 'blogs',
-        element: <Blogs/>
+        path: "/blogs",
+        element: <Blogs />,
       },
       {
-        path: 'contact',
-        element: <ContactUs/>
+        path: "/contact",
+        element: <ContactUs />,
       },
       {
-        path: 'career',
-        element: <Careers/>
-      }
+        path: "/career",
+        element: <Careers />,
+      },
     ],
   },
 ]);
 
 const Routing = () => {
-  return (
-    <RouterProvider router={router}/>
-  )
-  ;
+  return <RouterProvider router={router} />;
 };
 
 export default Routing;

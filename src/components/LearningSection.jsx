@@ -1,37 +1,42 @@
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const LearningSection = () => {
   const [activeSlide, setActiveSlide] = useState(1); // Track the current slide (1-based index)
 
   const slides = [
     {
-      title: 'Insights',
-      description: 'Get a clear picture of your progress, where you shine and improve with personalized insights on your performance.Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.',
-      image: 'src/assets/bg-img/gif3.gif',
+      title: "Insights",
+      description:
+        "Get a clear picture of your progress, where you shine and improve with personalized insights on your performance.Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.",
+      image: "/assets/bg-img/gif3.gif",
     },
     {
-      title: 'Interactive Learning',
-      description: 'Engage with hands-on exercises and real-world projects to solidify your skills.Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.',
-      image: 'src/assets/bg-img/gif3.gif',
+      title: "Interactive Learning",
+      description:
+        "Engage with hands-on exercises and real-world projects to solidify your skills.Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.",
+      image: "/assets/bg-img/gif3.gif",
     },
     {
-      title: 'AI-Powered Feedback',
-      description: 'Receive instant, AI-driven feedback to accelerate your learning journey.Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.',
-      image: 'src/assets/bg-img/gif3.gif',
+      title: "AI-Powered Feedback",
+      description:
+        "Receive instant, AI-driven feedback to accelerate your learning journey.Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.",
+      image: "/assets/bg-img/gif3.gif",
     },
     {
-      title: 'Progress Tracking',
-      description: 'Monitor your growth with detailed analytics and milestone tracking. Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.',
-      image: 'src/assets/bg-img/gif3.gif',
+      title: "Progress Tracking",
+      description:
+        "Monitor your growth with detailed analytics and milestone tracking. Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.",
+      image: "/assets/bg-img/gif3.gif",
     },
     {
-      title: 'Community Support',
-      description: 'Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.',
-      image: 'src/assets/bg-img/gif3.gif',
+      title: "Community Support",
+      description:
+        "Join a community of learners to collaborate and grow together.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.",
+      image: "/assets/bg-img/gif3.gif",
     },
   ];
 
@@ -39,9 +44,9 @@ const LearningSection = () => {
     <>
       <div
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('src/assets/bg-img/trr.jpg')`,
-          backgroundSize: 'contain',
-          backgroundRepeat: 'repeat',
+          backgroundImage: `linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/assets/bg-img/trr.jpg')`,
+          backgroundSize: "contain",
+          backgroundRepeat: "repeat",
         }}
       >
         <div className="max-w-7xl mx-auto py-10 px-4">
@@ -53,15 +58,17 @@ const LearningSection = () => {
             EXPERIENCE IMMERSIVE LEARNING
           </h3>
           <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
-            Join the learning revolution with the ultimate AI-Powered Integrated Learning Platform. Designed to provide a highly engaging, immersive learning experience, it’s always YOU at the centre of the learning.
+            Join the learning revolution with the ultimate AI-Powered Integrated
+            Learning Platform. Designed to provide a highly engaging, immersive
+            learning experience, it’s always YOU at the centre of the learning.
           </p>
 
           {/* Swiper Slider */}
           <Swiper
             modules={[Navigation]}
             navigation={{
-              nextEl: '.swiper-button-next-learning',
-              prevEl: '.swiper-button-prev-learning',
+              nextEl: ".swiper-button-next-learning",
+              prevEl: ".swiper-button-prev-learning",
             }}
             spaceBetween={40}
             slidesPerView={1.2}
