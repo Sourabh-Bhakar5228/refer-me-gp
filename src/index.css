@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styling for Swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s ease;
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Reduce icon size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px !important; /* Make the arrow smaller */
+  font-weight: bold;
+}
+
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Dropdown Item */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #374151;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover Effect for Dropdown Item */
+.dropdown-item:hover {
+  background-color: #fefce8;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure Dropdown Menu is Aligned Properly */
+.dropdown-menu a {
+  width: 100%;
+}
+
+/* Accessibility Focus Styles */
+.dropdown-menu a:focus {
+  outline: 2px solid #facc15;
+  outline-offset: 2px;
+}
+
+/* Mobile Sidebar Enhancements */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    transform: none;
+    opacity: 1;
+    display: block;
+  }
+}
